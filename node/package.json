@@ -1,0 +1,19 @@
+{
+  "name": "nginx-node",
+  "version": "0.0.1",
+  "description": "a Nginx reverse proxy use Node.js verify cookie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nginx",
+    "Node.js",
+    "Cookie"
+  ],
+  "author": "Bill",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.6.2"
+  }
+}
