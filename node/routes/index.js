@@ -8,7 +8,7 @@ const log = log4js.getLogger();
 log.level = 'debug';
 
 const reloadNginx = () => {
-	exec('nginx -s reload', (error, stdout, stderr) => {
+	exec('sudo nginx -s reload', (error, stdout, stderr) => {
 		if (error) {
 			log.error(error);
 			return;
