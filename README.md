@@ -22,8 +22,21 @@ Put the domain name certificate files in the `cert` directory
 
 ### Launching of the project
 
-Run Nginx by Docker
+* Run Nginx by Docker
 
 ```
 docker run --name nginx -d --network host -v /YOUR_PATH/nginx:/etc/nginx nginx
+```
+
+* Reload Nginx configuration files
+
+```
+docker exec nginx bash -c "nginx -t"
+docker exec nginx bash -c "nginx -s reload"
+```
+
+* Exit Nginx
+
+```
+docker rm -f nginx
 ```
