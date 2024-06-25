@@ -15,3 +15,15 @@ https://docs.docker.com/engine/install/ubuntu/
 ```
 git clone https://github.com/billginger/nginx.git
 ```
+
+### Configure HTTPS
+
+Put the domain name certificate files in the `cert` directory
+
+### Launching of the project
+
+Run Nginx by Docker
+
+```
+docker run --name nginx -d --network host -v /YOUR_PATH/nginx:/etc/nginx nginx
+```
